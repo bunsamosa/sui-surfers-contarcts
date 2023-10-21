@@ -11,7 +11,8 @@ const Disconnect = () => {
     }, [wallet])
 
     return (
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div style={{marginBottom: "50px"}}>
         <PrimaryButton
         // onclick add a redirect url
         onClick = {() => {
@@ -21,11 +22,14 @@ const Disconnect = () => {
         >
             EXPLORE!
         </PrimaryButton>
+        </div>
+        <div>
         <PrimaryButton
             onClick={disconnect}
         >
             Sign Out
         </PrimaryButton>
+        </div>
         </div>
     )
 }

@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       connectMessage="Your connect message goes here!"
     >
       <Head>
-        <title>Ethos Connect Example App</title>
+        <title>Sui Surfers</title>
       </Head>
       <Component {...pageProps} />
     </EthosConnectProvider>
