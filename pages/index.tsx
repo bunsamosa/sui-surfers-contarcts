@@ -6,10 +6,12 @@ const Home: NextPage = () => {
   const { status, wallet } = ethos.useWallet();
 
   return (
-    <div className="flex justify-between items-start">
+    <div className="flex justify-between items-start" style={{backgroundImage: 'url("https://miro.medium.com/v2/resize:fit:679/1*w1L0hZkVS9GiVdH0WFe60w.gif")', height: '100vh', objectFit: 'cover'}}>
       <div className="p-12 flex-1">Status: {status}</div>
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex-6">
-        <p className="page-title" style={{ color: '#FFDB58', fontSize: '44px', marginBottom:'40%' }}>Sui Surfers</p>
+        <p className="page-title" style={{ color: '#FFDB58', fontSize: '74px', marginBottom:'10%' }}>Sui Surfers</p>
+        <br/>
+        <p style={{ color: 'white', fontSize: '34px', marginBottom: '20px'}}>explore - interact - buy nfts or physical goods</p>
         {!wallet ? (
           <SignInButton className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
             Connect
